@@ -14,7 +14,7 @@ public class PrincipalOld {
     private ConsumoApi consumoApi = new ConsumoApi();
     private ConverteDados converte = new ConverteDados();
     private final String ENDERECO = "http://www.omdbapi.com/?t=";
-    private final String APIKEY = "&apikey=a5385271";
+    private final String APIKEY = "&apikey=" + System.getenv("OMDB_APIKEY");
     private List<DadosTemporada> temporadas = new ArrayList<>();
 
     public void menuPrincipal() {
